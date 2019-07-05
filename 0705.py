@@ -123,7 +123,7 @@ while i < 100:
         sum += i
 print(sum)
 
-'''
+
 
 #  for 문
 #  리스트
@@ -134,3 +134,33 @@ for  i in test_list:
 aa = [('a', 'b'), ('c', 'd'), ('e', 'f')]
 for (i, j) in aa:
     print(i, j)
+
+
+for j in range(1, 10):
+    for i in range(2, 10):
+        print('{} * {} = {}'.format(i, j, i*j), end="\t")
+
+    print(' ')
+
+'''
+#  별찍기
+i = 0
+while i < 6:
+    print('*'*i)
+    i += 1
+
+#  1부터 50까지의 합
+sum = 0
+n = 1
+while n <= 50:
+    sum += n
+    n += 1
+print(sum)
+
+#  리스트에서 최대값 출력
+myList = [50, 44, 68, 98, 42, 10]
+result = myList[0]
+for i in myList:
+    if result < i:
+        result = i
+print('최대값 :', result)
