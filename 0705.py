@@ -164,3 +164,33 @@ for i in myList:
     if result < i:
         result = i
 print('최대값 :', result)
+
+#  for문을 잉요한 딕셔너리출력
+
+my_info = {
+    'name': "kim",
+    'age': '33',
+    'city': 'seoul'
+}
+#  키에 따른 값 출력
+for key in my_info:
+    print(key, ":", my_info[key])
+#  값 출력
+for val in my_info:
+    print(val)
+for key, val in my_info.items():
+    print(key, ":", val)
+
+#------------------------------
+#  for  else 구문
+#------------------------------
+numbers = [13, 4, 32, 54, 12]
+
+for num in numbers:
+    if num == 1:
+        print("found : 32")
+        break
+    else:
+        print("not fount", num)
+else:  # for 문이 정상적으로 다 돌았을 때 작동 리스트가 비어있을 경우 동일, break 로 for문 빠져나갔다면 작동 x
+    print("not found 39")
